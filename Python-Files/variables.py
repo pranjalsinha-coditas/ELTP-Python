@@ -1,5 +1,5 @@
-number = str(5);
-print(number);
+number = str(5)
+print(number)
 # output 5
 x = 5
 
