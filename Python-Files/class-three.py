@@ -30,9 +30,10 @@ print(word[-3::1])
 print(word[-3:6:])
 
 
-#lt 
+#ltb
 print(word[4:-7:-2])
-print(word[4::2])
+print(word[4::-2])
+print(word[-2:-7:-2])
 
 
 
