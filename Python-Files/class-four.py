@@ -50,30 +50,31 @@ print(len(List))
 # cloning or cppying list using 
 # => slicing technique
 
-original_list = [4, 8, 2, 10, 15, 18]
-cloned_list_slice = original_list[:]
-cloned_list_extend = original_list.copy()
+import copy
 
-import copy 
+original_numbers_list = [1, 2, 3, 4, 5]
+cloned_slice_copy = original_numbers_list[:]
+
+cloned_extend_copy = original_numbers_list.copy()
+print(cloned_extend_copy)
+print(cloned_slice_copy)
+
 original_list = [1, 2, [3, 5], 4]
-cloned_list_shallow_copy_module = copy.copy(original_list)
-
-cloned_list_comprehension = [i for i in original_list]
+cloned_list_module = copy.copy(original_list)
 
 cloned_list_append = []
 for item in original_list:
     cloned_list_append.append(item)
+    
+print(cloned_list_append)
 
 cloned_list_with_enumerate = original_list.copy()
+print(cloned_list_with_enumerate)
 
-original_list_copy_module = [1, 2, [3, 5], 4] #deepcopy
 cloned_list = copy.deepcopy(original_list)
+print(cloned_list)
 
-cloned_list_enumerate = [i for a, i in enumerate(original_list_copy_module)]
-
-# cloned_list_map = list(map(int, original_list_copy_module))
-
-cloned_list_len = original_list[slice(len(original_list_copy_module))]
-
+cloned_list_len = original_list[slice(len(original_numbers_list))]
+print(cloned_list_len)
 
 
