@@ -1,46 +1,54 @@
 #Building Lists
 
 # Task-1
+# print a list named evens_to_50 in doubles till 50
 evens_to_50 = {
     index for index in range(51) if index % 2 == 0
 }
 print(evens_to_50)
 
 # Task-2
+# print a list named new_list in between 1, 5
 new_list = {
     index for index in range(1, 6)
 }
 print(new_list)
 
 # Task-3
+# print a list named doubles till 50
 doubles = {
     index * 2 for index in range(51)
 }
 print(doubles)
 
 # Task-4
+# print a list named doubles_by_3 till 50
 doubles_by_3 = {
     index * 2 for index in range(51) if index * 2 % 3 == 0
 }
 print(doubles_by_3)
 
 # Task-5
+# print a list named Pattern_c till 10
 Pattern_c = {
     "C" for index in range(11)
 }
 print(Pattern_c)
 
 # Task-6
+#print a list named cubes_by_four till 10
 cubes_by_four = {
     x ** 3 for x in range(1, 11) if x ** 3 % 4 == 0
 }
 print(cubes_by_four)
 
 # Task-7
+# print a list named list till 10. Use slicing for print
 list = [index ** 2 for index in range(1, 11)]
 print(list[2:9:2])
 
 # Task-8
+# print a list named Odd_nums using slicing till 10
 Odd_nums = [index for index in range(1, 11)]
 print(Odd_nums[::2])
 
@@ -49,6 +57,7 @@ Alphabets = ['A', 'B', 'C', 'D']
 print(Alphabets[::-1])
 
 # Task-11
+# print a list named to_21 till 21
 to_21 = [index for index in range(1, 22)]
 print(to_21)
 
