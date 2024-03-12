@@ -76,5 +76,5 @@ print(cloned_list)
 
 cloned_list_len = original_list[slice(len(original_numbers_list))]
 print(cloned_list_len)
-
+# https://www.geeksforgeeks.org/copy-python-deep-copy-shallow-copy/
 
