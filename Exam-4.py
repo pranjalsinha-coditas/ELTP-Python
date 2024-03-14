@@ -12,14 +12,6 @@
 # arr[:]                  # a copy of the whole array
 # arr[start:stop:step]    # start through not past stop, by step
 
-(a, b, c, d, e, f) = (1, 2, 3, 4, 5, 6)
-print(a)
-print(b)
-print(c)
-print(d)
-print(e)
-print(f)
-
 a, b, c = '123'
 print(a)
 print(b)
@@ -42,18 +34,9 @@ a, b, c = my_dict
 print(a)
 print(b)
 print(c)
+
 print("Unpack values")
 a, b, c = my_dict.values()
-print(a)
-print(b)
-print(c)
-
-[a, b, c] = 1, 2, 3
-print(a)
-print(b)
-print(c)
-
-[a, b, c] = {'x', 'y', 'z'}
 print(a)
 print(b)
 print(c)
@@ -70,12 +53,6 @@ print(c)
 print(a)
 print(b)
 print(c)
-
-*a, b, c, d = 1, 2, 3
-print(a)
-print(b)
-print(c)
-print(d)
 
 gen = (2**x for x in range(15))
 print(gen)
@@ -103,9 +80,6 @@ print(number)
 print(square)
 print(cube)
 
-*_,cube = powers(2)
-print(cube)
-
 tup = (1, 2, 3)
 print((0, *tup, 4))
 list1 = [1, 2, 3]
@@ -122,3 +96,14 @@ combine = {**numbers, **letters}
 print(combine)
 
 
+tup = (1, 2, 3)
+print(0, *tup, 4)
+list1 = [1, 2, 3]
+print([0, list1, 4])
+my_set = "123"
+print([*my_set, *list1, *tup, *my_str])
+
+numbers = {"one" : 1, "two" : 2, "Three" : 3}
+letters = {"a" : "Apple", "b" : "bat", "c" : "catch"}
+combined = {*numbers, *letters}
+print(combined)
