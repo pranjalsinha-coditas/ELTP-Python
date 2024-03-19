@@ -1,0 +1,37 @@
+1. F ”prepending”
+2 .spread operators and rest operators for accessing output from required 
+Data structures
+3. Please keep writing these things 
+4. Use return statements instead of print 
+5. Declare variables using generics
+6. Please use dynamic approach 
+7. Use *args and **kwargs for positional arguments in functions 
+8. Name with underscore
+9. Always use closure for defining functions 
+10. Always use global and local scope
+11. Use keywords like try, except, while use for loops for each 
+12. For generics use Callable, TypeVar, docstrings
+13. Frequently use unpacking for lists 
+14. Use lambda functions 
+15. Function calls with arguments for dynamic approaches instead of input
+
+* 		Len (Length): len("Hello, World!")
+* 		Reverse: "Hello, World!"[::-1]
+* 		Sort: ''.join(sorted("Hello, World!"))
+* 		Split: "Hello, World!".split(", ")
+* 		toLowerCase(): "Hello, World!".lower()
+* 		toUpperCase(): "Hello, World!".upper()
+* 		Join: ", ".join(['Hello', 'World!'])
+* 		forEach: for char in "Hello, World!": print(char)
+* 		Slice: "Hello, World!"[3:8]
+* 		Includes: "World" in "Hello, World!"
+* 		Push: "Hello, " + "World!"
+* 		Pop: Strings are immutable in Python, so you can't pop characters.
+* 		Reduce: from functools import reduce; reduce(lambda x, y: x + y, "Hello, World!")
+* 		Ceil: Not applicable for strings.
+* 		Floor: Not applicable for strings.
+* 		Map: ''.join(map(lambda x: x.upper(), "Hello, World!"))
+* 		Filter: ''.join(filter(lambda x: x.isalpha(), "Hello, World!"))
+* 		Keys: Not applicable for strings.
+* 		Values: Not applicable for strings.
+* 		This: In Python, this concept can vary depending on context. In classes or methods, it's usually self, otherwise, it's just the object itself.

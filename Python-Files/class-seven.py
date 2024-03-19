@@ -92,7 +92,8 @@ def loan_factory(rate_of_interest):
     
     def update_calculate(updateRate):
         nonlocal rate_of_interest
-        rate_of_interest = updateRate
+        if updateRate is not None:
+            rate_of_interest = updateRate
         
     return [calculator, update_calculate]
     
