@@ -1,20 +1,33 @@
-1. F ”prepending”
+1. f"prepending"
+=> return f""
 2 .spread operators and rest operators for accessing output from required 
 Data structures
-3. Please keep writing these things 
-4. Use return statements instead of print 
+=>Eg. *args, **kwargs
+4. Use return statements instead of print
+=>use return 
 5. Declare variables using generics
+=> Callable[..., bool], list[Callable]
 6. Please use dynamic approach 
+=> func_name(positional_functions("default_values"))
 7. Use *args and **kwargs for positional arguments in functions 
+=> for shallow copy 
 8. Name with underscore
+=> for naming
 9. Always use closure for defining functions 
+=> return functions without function call or executions
 10. Always use global and local scope
+=> use nonlocal and global inspite of using the varibales again and again
 11. Use keywords like try, except, while use for loops for each 
+=>try: ..... except: ValueError...
 12. For generics use Callable, TypeVar, docstrings
+=> Keep revising these functions 
 13. Frequently use unpacking for lists 
+=> after func defs and for returing the proper output
 14. Use lambda functions 
-15. Function calls with arguments for dynamic approaches instead of input
+=> along with map, reduce and filter 
+=> lambda x: x % 2 == 0
 
+15. Function calls with arguments for dynamic approaches instead of input
 * 		Len (Length): len("Hello, World!")
 * 		Reverse: "Hello, World!"[::-1]
 * 		Sort: ''.join(sorted("Hello, World!"))

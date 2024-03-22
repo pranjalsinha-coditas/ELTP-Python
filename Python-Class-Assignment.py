@@ -33,3 +33,13 @@ result = extract_url_components(url)
 handler_func = endpoint_handlers.get(result["endpoint"], handle_unknown)
 handler_func(**result["params"])
 
+# Write a Python program that prompts the user to input a URL containing 
+# query parameters, extracts specific query parameters ('name' and 'colors'), 
+# and stores them in a dictionary. How would you approach parsing the URL and 
+# extracting the query parameters efficiently?
+
+# "Write a Python program that accepts a URL input from the user, extracts specific 
+# query parameters ('name' and 'colors') from the URL, and stores them in a dictionary. 
+# How would you efficiently extract these parameters from the URL and handle cases where 
+# one or both parameters might not be present?"
+
