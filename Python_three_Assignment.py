@@ -9,8 +9,10 @@ def get_details(details_list: list[Callable]) -> Callable[..., bool]:
         "department"  : details_list[2]
     }             
     return user_details
+
 def post_details(details_list: list[Callable]) -> Callable[..., bool]:
     return details_list #The dictionary used
+
 def deletion_details(details_list: list[Callable]) -> str | None:
     try:
         if details_list[2] == "Intern":
@@ -20,6 +22,7 @@ def deletion_details(details_list: list[Callable]) -> str | None:
     except ValueError:
                 details_list = details_list.clear #for reference 
                 return f"The details are deleted {details_list}"
+    
 my_methods = {
     "GET": get_details, 
     "POST": post_details, 
@@ -29,13 +32,14 @@ my_methods = {
 my_details = ["Pranjal", 21, "SDET"]
 details_userone = ["Amar", 23, "Intern"]
 details_usertwo = ["Yamal", 26, "Director"] 
+
 print(get_details(my_details))
 print(deletion_details(my_details))
 print(get_details(details_userone))
 print(deletion_details(details_userone))
 print(get_details(details_usertwo))
 print(deletion_details(details_usertwo))
-# print(post_details(my_details))
+print(post_details(my_details))
 
 
 

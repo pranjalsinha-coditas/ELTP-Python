@@ -62,26 +62,19 @@ tea_shop = {
 
 print(tea_shop)
 tea_shop["chai"]
-
 print(tea_shop["chai"]["Ginger"])
-
 tea_shop["chai"]["Ginger"] = "Zesty"
 print(tea_shop["chai"]["Ginger"])
-
 squared_num = {x: x**2 for x in range(6)}
 print(squared_num)
 squared_num.clear()
-
 squared_num
 print(squared_num)
-
 keys = {"Masala", "Ginger", "Lemon"}
 print(keys)
-
 default_value = "Delicious"
 new_dict = dict.fromkeys(keys, default_value)
 print(new_dict)
-
 new_dict = dict.fromkeys(keys, keys)
 print(new_dict)
 

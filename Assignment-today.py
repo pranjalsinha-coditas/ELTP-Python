@@ -6,7 +6,7 @@ def role_based_access_control(role_required):
                 assert role_required == 'any' or user_role == role_required
                 return func(*args, **kwargs)
             except AssertionError:
-                return f"Access Denied for rol: {user_role}. Required role: {role_required}"
+                return f"Access Denied for role: {user_role}. Required role: {role_required}"
         return wrapper
     return decorator
 
